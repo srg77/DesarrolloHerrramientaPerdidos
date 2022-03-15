@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: rgb(53, 53, 53);
+    font-family: 'calibri';
+}
+
+header {
+    background: #ffffff;
+    width: 100%;
+    clear: both;
+    content:'';
+    display: table;
+  }
+
+  img {
+    height: 15%;
+    width: 10%;
+    object-fit: contain;
+   }
+   .cat {
+    height:30px;
+    width: 30px;
+   }
+
+   
