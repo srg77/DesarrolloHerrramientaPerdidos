@@ -8,7 +8,8 @@ body{
     background-color: rgb(53, 53, 53);
     font-family: Arial, Helvetica, sans-serif;
 }
-
+ 
+  /* cabesero*/
 header {
     background: #ffffff;
     width: 100%;
@@ -33,6 +34,8 @@ header {
      padding: 16px 58px;
    }
 
+  /* lista de data*/ 
+
    select ,
    option{
      border: 0;
@@ -47,6 +50,8 @@ header {
      border-radius: 24px;
      transition: 0.25s;
     }
+    
+    /* cuadro Query*/
 
     textarea{
       border: 0;
@@ -69,9 +74,112 @@ header {
     }
 
     section .col-1{
-      width: 70%;
+      width: 60%;
     }
 
     section .col-2{
-      width: 30%;
+      width: 38%;
+      padding:   80px 0 ;
     }
+
+    /*afectados*/
+
+    .contador{
+      width: 500px;
+      height: 320px;
+      background-color: #797575;
+      border-radius: 24px;
+      transition: 0.25s;
+      text-align: center;
+    }
+ 
+    .H3{
+      padding: 10PX 0;
+      font-family:  Helvetica, sans-serif;
+      color: #29282be5;
+    }
+
+    .afectados{
+      padding: 70px;
+      font-size: 80px;
+      font-family: 'Courier New';
+      font-weight: 600;
+      color: #413f3f;
+    }
+
+    /* boton y clase por cambio*/
+     
+    button[type="submit"]{
+      border-radius: 24px;
+      transition: 0.25s;
+      height: 25px;
+      width: 100px;
+      color: rgb(0, 0, 0);
+      background: #4fb441;
+      border: 2px solid #000000;
+      cursor: pointer;
+      background-image: url(../assets/img/btngreen.png);
+     }
+
+
+    button[type="submit"]:hover {
+      background: #218f2f;
+    }
+
+    .button-p{
+      border-radius: 24px;
+      transition: 0.25s;
+      height: 25px;
+      width: 100px;
+      color: rgb(0, 0, 0);
+      background: #bccc30;
+      border: 2px solid #000000;
+      background-image: url(../assets/img/btnyelow.png);
+     }
+
+
+     .button-p:hover {
+      background: #888f21;
+      cursor: pointer;
+    }
+
+    /* tabla Procesados*/
+
+    #tabla {
+      overflow-y:scroll;
+      height:500px;
+      width:100%;
+ }
+ #tabla table {
+     width:100%;
+     text-align: center;
+     transition: 0.25s;
+    
+ }
+
+ #tabla table thead th {
+   background: #000000;
+   color: #ffffff;
+   padding: 8px;
+   
+   transition: 0.25s;
+ }
+ table thead th:first-child{
+  border-radius: 10px 0 0 10px;
+ }
+ table thead th:last-child{
+  border-radius: 0 10px 10px 0;
+ }
+
+ table tbody td {
+  background-color:rgb(119, 115, 115);
+  padding: 8px;
+ }
+ table tbody tr td:first-child{
+  border-radius: 10px 0 0 10px;
+ }
+ table tbody tr td:last-child{
+  border-radius: 0 10px 10px 0;
+ }
+
+
