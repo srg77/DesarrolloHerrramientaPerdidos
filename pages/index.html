@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DESARROLLO</title>
-    <link href="../styles/styles.css" rel="stylesheet" />
+    <title>Página procesado</title>
+    <link href="../css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -57,7 +57,7 @@
             </div>
 
             <div class="campos">
-                <button type="submit">consultar</button>
+                <button type="submit" onclick="actualizarContador()">Consultar</button>
                 <button  class="button-p">Procesar</button>
             </div>
             
@@ -65,7 +65,7 @@
         <div class="col-2">
             <div class="contador">
                 <h3 class="H3">DOCUMENTOS AFECTADOS</h3>
-                <p class="afectados">0</p>
+                <p id="contador" class="afectados">0</p>
             </div>
         </div>
     </section>
@@ -76,8 +76,8 @@
             <thead>
                 <tr>
                     <th>Estado</th>
-                    <th>mensanje</th>
-                    <th>Codigo De Respuesta</th>
+                    <th>Mensaje</th>
+                    <th>Codigo de Respuesta</th>
                 </tr>
             </thead>
 
@@ -161,9 +161,10 @@
         </table>
     </div>
     <div class="campos" >
-        <button type="submit">exportar</button>
+        <button type="submit">Exportar</button>
     </div>
-    <script src="../js/scrip.js"></script>
+    <script src="../js/script.js"></script>
+    <!-- <script src="../sqlServer.js"></script> -->
 </body>
 
 </html>
