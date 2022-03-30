@@ -19,7 +19,8 @@
     <section>
         <div class="col-1">
             <div class="campos">
-                <select>
+                <select id="instancias"  onchange="ObtenerValor();">
+                    <option value="0">Seleccione... </option>
                     <option value="1">Seguros Estado </option>
                     <option value="2">Liberty</option>
                     <option value="3">Previsora</option>
@@ -53,12 +54,12 @@
             </div>
 
             <div class="campos">
-                <textarea rows="20" cols="100"></textarea>
+                <textarea id="entrada-datos" rows="20" cols="100" ></textarea>
             </div>
 
             <div class="campos">
                 <button type="submit" onclick="actualizarContador()">Consultar</button>
-                <button  class="button-p">Procesar</button>
+                <button id="btn-process"  class="button-p">Procesar</button>
             </div>
             
         </div>
@@ -72,7 +73,7 @@
 
 
     <div class="campos" id="tabla">
-        <table>
+        <table >
             <thead>
                 <tr>
                     <th>Estado</th>
@@ -164,6 +165,7 @@
         <button type="submit">Exportar</button>
     </div>
     <script src="../js/script.js"></script>
+    <script src="../js/config.js"></script>
     <!-- <script src="../sqlServer.js"></script> -->
 </body>
 
